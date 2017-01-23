@@ -1,0 +1,90 @@
+body{
+ font-style: Areal, sans-serif;
+ background: #aeb1b7;
+
+}
+wrapper1{
+  background-color: #ff7900;
+}
+header{
+
+}
+.clearfix:after {
+        visibility: hidden;
+        display: block;
+        content: " ";
+        clear: both;
+        height: 0;
+        font-size: 0;
+      }
+
+.logo{
+  float: left;
+}
+nav ul{
+  text-decoration: none;
+}
+nav li{
+  text-decoration: none;
+  float: left;
+}
+nav li a{
+  text-decoration: none;
+  float: left;
+  color:#fff;
+}
+nav a
+{
+  background-color: blue;
+	color: white;
+	text-decoration: none;
+	display: block;
+	float: left;
+	padding: 20px;
+	width: 100px;
+}
+
+a:hover
+{
+  color: Black;
+  background-color: #aaaaaa;
+}
+
+.wrapper2{
+  background-color: white;
+  width: auto;
+  height:600px;
+}
+
+.portfolio{
+  width: 600px;
+  height: 400px;
+  float: left;
+}
+.project{
+  width: 600px;
+  height: 400px;
+  float: left;
+}
+
+
+.portfolio img{
+  width: 200px;
+  height: 200px;
+
+}
+
+
+.profile_img img{
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+
+}
+
+.Project img{
+  width: 200px;
+  height: 200px;
+}
