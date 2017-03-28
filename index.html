@@ -1,136 +1,55 @@
-<!Doctype HTMl>
-<html>
+<!DOCTYPE html>
+<html lang="en" data-ng-app="portfolioApp">
 <head>
-
   <title> Habtamu Abere </title>
-
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Cantarell" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/hover.js"></script>
  </head>
-<body>
 
-    <header>
-  <div class="wrapper1">
-      <div class="logo">
-       <h1> Habtamu Abere</h1>
-        <h2>Full stack developer</h2>
-
+<body ng-controller="IndexController as vm">
+    <main data-ui-view>
+      <div class="overlay">
+        <div class="logo1">
+          <h2 id="full">Full stack developer | </h2>
+        </div>
+        <div class="logo2">
+          <h2 id="designer"> Designer</h2>
+          </div>
       </div>
+    </main>
+  
 
-        <nav>
 
-           <ul>
 
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
 
-           </ul>
 
-        </nav>
 
+
+
+  <div class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+      <span class="navbar-text">
+        <div class="developers">
+      <a data-ui-sref="Index">home /</a>   <a data-ui-sref="about">About /</a>   <a data-ui-sref="work"> work /</a>  <a data-ui-sref="contact">Contact</a>
+        </div>
+      </span>
     </div>
-   </header>
-
-<div class="clearfix"></div>
-<main>
-  <h2>About</h2>
-  <div class="profile_img">
-      <img src="image/profile.jpg" alt="This is a profile image" />
-  </div>
-  <div class="Skills">
-      <div class="Language">
-         <h3>Language</h3>
-         <ul>
-           <li>Javascript</li>
-           <li>HTML5/CSS3</li>
-           <li>Node.js</li>
-           <li></li>
-           <li></li>
-           <li></li>
-         </ul>
-      </div>
-      <div class="framework">
-        <h3>Framework</h3>
-
-      </div>
-      <div class="">
-
-
-      </div>
-
-
-
-
-
-  </div>
-  <div class="Education">
-<span></span>
-<span>Marine Education and Training Authority,Israel
-Master's degree, Marine Science/Merchant Marine Officer
-2011</span>
-<span>Bahir Dar University, Bahir dar Ethiopia
-Bachelor of Science (B.Sc.), Mechanical Engineering
-2006 – 2010
-</span>
-<span></span>
-
-
-
-
-
-
-
   </div>
 
-
-
-
-
-</main>
-
-
-
-
-
-
-
-
-
-
-
-<div class="wrapper2">
-
-    <h2>Portfolio</h2>
-  <div class="portfolio">
-    <h3>Personal site</h3>
-
-     <img src="image/portfolio.png" alt="This is a portfolio image" />
-  </div>
- <div class="Project">
-     <h3>Nursery Project</h3>
-     <img src="image/project_img.png" alt="This is a portfolio image" />
-
- </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-<footer>
-    <a href="#" class="foot_icon"></a>
-   <a href="#" class="foot_icon"></a>
-   <a href="#" class="foot_icon"></a>
-</footer>
-
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </body>
 </html>
