@@ -1,32 +1,58 @@
 <!DOCTYPE html>
-<html lang="en" data-ng-app="portfolioApp">
+<html lang="en" data-ng-app="habPortfolioApp">
 <head>
   <title> Habtamu Abere </title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Cantarell" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
   <script src="js/app.js"></script>
   <script src="js/hover.js"></script>
- </head>
+</head>
 
-<body ng-controller="IndexController as vm">
-    <main data-ui-view>
-      <div class="overlay">
-        <div class="logo1">
-          <h2 id="full">Full stack developer | </h2>
-        </div>
-        <div class="logo2">
-          <h2 id="designer"> Designer</h2>
-          </div>
-      </div>
-    </main>
-  
+<body>
+  <main data-ui-view>
+    <div class="mainpage">
+      <h1>  Habtamu Abere </h1>
+      <h4>  Full stack web developer </h4>
+    </div>
+    <div class="show_work">
+      <h3> Check out some of my work <a data-ui-sref="project"><i class="fa fa-chevron-right fa-5x fa_with_bg" aria-hidden="true" ></i></a></h3>
+
+    </div>
+
+  </main>
+
+  <div class="navbar navbar-default navbar-fixed-top">
+    <!-- <div class="container"> -->
+    <div class="nav navbar-nav navbar-left">
+      <li><a data-ui-sref="Index" class="navbar-brand">Habtamu Abere</a></li>
+    </div>
+
+    <!-- <div class="navbar-text"> -->
+    <div id="menu" class="nav navbar-nav navbar-right">
+      <!--
+      <ul>
+        <li><a href="#main" title="Home"> <i class="fa fa-home fa-fw"></i></a></li>
+        <li><a href="#about" title="About me"> <i class="fa fa-male fa-fw"></i> </a></li>
+        <li><a href="#timeline" title="Timeline"> <i class="fa fa-clock-o fa-fw"></i> </a></li>
+        <li><a href="#skills" title="Skills"> <i class="fa fa-tasks fa-fw"></i> </a></li>
+        <li><a href="#my-projects" title="Projects"> <i class="fa fa-code fa-fw"></i> </a></li>
+        <li><a href="#footer" title="Contact me"> <i class="fa fa-phone fa-fw"></i> </a></li>
+      </ul>
+      -->
+       <a data-ui-sref="Index"><i class="fa fa-home fa-fw fa-2x"></i></a>   <a data-ui-sref="about"><i class="fa fa-male fa-fw fa-2x"></i></a>   <a data-ui-sref="project"><i class="fa fa-code fa-fw fa-2x"></i> </a>  <a data-ui-sref="contact"><i class="fa fa-phone fa-fw fa-2x"></i></a>
+    </div>
+    <!-- </div> -->
+    <!-- </div> -->
+  </div>
 
 
 
@@ -37,17 +63,13 @@
 
   <div class="navbar navbar-default navbar-fixed-bottom">
     <div class="container">
-      <span class="navbar-text">
-        <div class="developers">
-      <a data-ui-sref="Index">home /</a>   <a data-ui-sref="about">About /</a>   <a data-ui-sref="work"> work /</a>  <a data-ui-sref="contact">Contact</a>
-        </div>
-      </span>
+      Habtamu Abere
     </div>
   </div>
 
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 

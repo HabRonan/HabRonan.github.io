@@ -3,7 +3,7 @@
 
 
 angular
-.module("portfolioApp", [
+.module("habPortfolioApp", [
   'ui.router'
 ])
 
@@ -21,10 +21,10 @@ angular
   "$stateParams",
   AboutControllerFunction
 ])
-.controller('WorkController',[
+.controller('ProjectController',[
   "$state",
   "$stateParams",
-  WorkControllerFunction
+  ProjectControllerFunction
 ])
 .controller('ContactController',[
   "$state",
@@ -46,10 +46,10 @@ function RouterFunction($stateProvider){
     controller: 'AboutController',
     controllerAs: 'vm'
   })
-  .state('work',{
-    url: "/work",
-    templateUrl: "js/ng-views/work.html",
-    controller: "WorkController",
+  .state('project',{
+    url: "/project",
+    templateUrl: "js/ng-views/project.html",
+    controller: "ProjectController",
     controllerAs: "vm"
   })
   .state('contact',{
@@ -63,12 +63,5 @@ function RouterFunction($stateProvider){
 
 function IndexControllerFunction($state){}
 function AboutControllerFunction($state,$stateParams){}
-function WorkControllerFunction($state,$stateParams){}
+function ProjectControllerFunction($state,$stateParams){}
 function ContactControllerFunction ($state, $stateParams){}
-
-//
-// $(document).ready(function() {
-//   $(".trigger").click(function() {
-//     $(".menu").toggleClass("active");
-//   });
-// });
