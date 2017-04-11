@@ -10,6 +10,7 @@ body {
     linear-gradient(135deg, hsla(253, 95%, 42%, 1) 10%, hsla(253, 95%, 42%, 0) 80%),
     linear-gradient(225deg, hsla(179, 91%, 45%, 1) 10%, hsla(179, 91%, 45%, 0) 80%),
     linear-gradient(315deg, hsla(119, 96%, 49%, 1) 100%, hsla(119, 96%, 49%, 0) 70%);
+    padding-bottom: 60px;
 }
 .navbar.navbar-default.navbar-fixed-top{
     background:
@@ -553,7 +554,7 @@ div{
 }
 #timeline {
   padding-top: 5%;
-  margin-left: 200px;
+  margin-left: 100px;
   margin-top: 200px;
   padding-top: 100px;
   /*background-color:  rgba(255,255,255,0.1);*/
