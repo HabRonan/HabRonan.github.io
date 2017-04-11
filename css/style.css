@@ -491,13 +491,14 @@ div{
 }
 
 
-
 /*projects*/
 .project_container{
   padding-top: 20px;
   margin-left: 180px;
+  margin-bottom: 200px;
   width: 100%;
   height: 1200px;
+
 }
 .col-xs-4{
   margin: 200px 10px 0 0;
@@ -543,7 +544,8 @@ div{
 /*Timeline*/
 .experience{
   /*justify-content: center;*/
-  /*padding-top: 10px;*/
+  padding-bottom: 90px;
+  margin-bottom: 30px;
   text-align: center;
   background-color:  rgba(255,255,255,0.1);
 }

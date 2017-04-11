@@ -40,7 +40,7 @@ angular
 function RouterFunction($stateProvider){
   $stateProvider
   .state('Index',{
-    url: "/",
+    url: "",
     templateUrl: '../index.html',
     controller: 'IndexController',
     controllerAs: 'vm'
