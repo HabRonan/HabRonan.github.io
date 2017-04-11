@@ -31,6 +31,11 @@ angular
   "$stateParams",
   ContactControllerFunction
 ])
+.controller('SkillsController',[
+  "$state",
+  "$stateParams",
+  SkillsControllerFunction
+])
 
 function RouterFunction($stateProvider){
   $stateProvider
@@ -57,6 +62,12 @@ function RouterFunction($stateProvider){
     templateUrl: 'js/ng-views/contact.html',
     controller: 'ContactController',
     controllerAs: 'vm'
+  })
+  .state('skills',{
+    url: '/skills',
+    templateUrl: 'js/ng-views/skills.html',
+    controller: 'SkillsController',
+    controllerAs: 'vm'
   });
 
 }
@@ -65,3 +76,4 @@ function IndexControllerFunction($state){}
 function AboutControllerFunction($state,$stateParams){}
 function ProjectControllerFunction($state,$stateParams){}
 function ContactControllerFunction ($state, $stateParams){}
+function SkillsControllerFunction($state){}
