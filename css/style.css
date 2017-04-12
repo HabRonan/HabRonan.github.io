@@ -1,6 +1,6 @@
-html, body {
-  height: 100%;
-  overflow: hidden;
+html {
+  position: relative;
+  min-height: 100%;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
     linear-gradient(135deg, hsla(253, 95%, 42%, 1) 10%, hsla(253, 95%, 42%, 0) 80%),
     linear-gradient(225deg, hsla(179, 91%, 45%, 1) 10%, hsla(179, 91%, 45%, 0) 80%),
     linear-gradient(315deg, hsla(119, 96%, 49%, 1) 100%, hsla(119, 96%, 49%, 0) 70%);
-    padding-bottom: 60px;
+    margin-bottom: 60px;
 }
 .navbar.navbar-default.navbar-fixed-top{
     background:
@@ -38,7 +38,7 @@ body {
 .nav.navbar-nav.navbar-right{
   padding: 20px 40px 0 0;
 }
-.nav.navbar-nav.navbar-right > a:hover, .nav.navbar-nav.navbar-right > a:focus {
+.navbar-collapse.collapse > a:hover, .navbar-collapse.collapse > a:focus {
     color: yellow;
 }
 .nav.navbar-nav.navbar-left > li > a{
@@ -513,36 +513,39 @@ div{
   background-color:  rgba(255,255,255,0.1);
 }
 .col-xs-4>h3{
-  padding: 10px;
+  padding: 5px;
 
 }
 .col-xs-4>h4{
-  padding: 10px;
+  padding: 5px;
 
 }
 
 .col-xs-4>h5 {
-  font-size: 24px;
+  font-size: 18px;
   color: white;
 
 }
 #project2{
   background-image: url("../image/unicornr.png");
   background-size: contain;
+  background-repeat: no-repeat;
   width: 580px;
-  height: 350px;
+  height: 390px;
 }
 #project3{
     background-image: url("../image/traveladvisor.png");
     background-size: contain;
+    background-repeat: no-repeat;
     width: 580px;
-    height: 300px;
+    height: 370px;
 }
 #project1{
-    background-image: url("../image/Triviaworld.png");
+    background-image: url("../image/triviaworld.png");
     background-size: contain;
+    background-repeat: no-repeat;
     width: 580px;
-    height: 300px;
+    height: 260px;
 }
 /*Timeline*/
 .experience{
@@ -646,4 +649,59 @@ div{
 }
 .col-sm-4.col-md-2>ul li{
   list-style: none;
+}
+
+
+/*responsive*/
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in {
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+}
+/*footer*/
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background:
+    linear-gradient(45deg, hsla(352, 96%, 45%, 1) 0%, hsla(352, 96%, 45%, 0) 70%),
+    linear-gradient(135deg, hsla(253, 95%, 42%, 1) 10%, hsla(253, 95%, 42%, 0) 80%),
+    linear-gradient(225deg, hsla(179, 91%, 45%, 1) 10%, hsla(179, 91%, 45%, 0) 80%),
+    linear-gradient(315deg, hsla(119, 96%, 49%, 1) 100%, hsla(119, 96%, 49%, 0) 70%);
 }

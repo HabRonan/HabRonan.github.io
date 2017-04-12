@@ -9,35 +9,33 @@ angular
 
 .config([
   "$stateProvider",
+  "$locationProvider",
+  "$urlRouterProvider",
   RouterFunction
 ])
 .controller('IndexController',[
-  "$state",
-  "$stateParams",
+
   IndexControllerFunction
 ])
 .controller('AboutController',[
-  "$state",
-  "$stateParams",
+
   AboutControllerFunction
 ])
 .controller('ProjectController',[
-  "$state",
-  "$stateParams",
+
   ProjectControllerFunction
 ])
 .controller('ContactController',[
-  "$state",
-  "$stateParams",
+
   ContactControllerFunction
 ])
 .controller('SkillsController',[
-  "$state",
-  "$stateParams",
+
   SkillsControllerFunction
 ])
 
-function RouterFunction($stateProvider){
+function RouterFunction($stateProvider,$locationProvider,$urlRouterProvider){
+
   $stateProvider
   .state('Index',{
     url: "/",
@@ -69,11 +67,12 @@ function RouterFunction($stateProvider){
     controller: 'SkillsController',
     controllerAs: 'vm'
   });
-
+   $urlRouterProvider.otherwise("/")
+   $locationProvider.html5Mode(true);
 }
 
-function IndexControllerFunction($state){}
-function AboutControllerFunction($state,$stateParams){}
-function ProjectControllerFunction($state,$stateParams){}
-function ContactControllerFunction ($state, $stateParams){}
-function SkillsControllerFunction($state){}
+function IndexControllerFunction(){}
+function AboutControllerFunction(){}
+function ProjectControllerFunction(){}
+function ContactControllerFunction (){}
+function SkillsControllerFunction(){}
