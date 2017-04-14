@@ -184,7 +184,7 @@ body {
   border: 2px solid white;
   border-radius: 5px;
   width: 700px;
-  height: 400px;
+  height: 280px;
 }
 .show_work:hover{
   background-color: rgba(41,41,41,0.7);
@@ -753,9 +753,8 @@ body {
 
 .fakeScreen {
   background:  url("../image/pattern.png");
-  border-left: 2px solid white;
   width: 700px;
-  height: 375px;
+  height: 255px;
   margin: 0 auto;
   padding: 20px;
   border-bottom-left-radius: 5px;
