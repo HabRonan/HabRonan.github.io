@@ -20,6 +20,8 @@
 
 <body>
 
+<div class="wrapper">
+
 
   <div class="navbar navbar-default navbar-fixed-top">
     <!-- <div class="container"> -->
@@ -27,30 +29,28 @@
       <li><a data-ui-sref="Index" class="navbar-brand">Habtamu Abere</a></li>
     </div>
 
-    <!-- <div class="navbar-text"> -->
-    <div id="menu" class="nav navbar-nav navbar-right">
-      <!--
+  
+     <div class="navbar-collapse collapse" >
+
       <ul>
-        <li><a href="#main" title="Home"> <i class="fa fa-home fa-fw"></i></a></li>
-        <li><a href="#about" title="About me"> <i class="fa fa-male fa-fw"></i> </a></li>
-        <li><a href="#timeline" title="Timeline"> <i class="fa fa-clock-o fa-fw"></i> </a></li>
-        <li><a href="#skills" title="Skills"> <i class="fa fa-tasks fa-fw"></i> </a></li>
-        <li><a href="#my-projects" title="Projects"> <i class="fa fa-code fa-fw"></i> </a></li>
-        <li><a href="#footer" title="Contact me"> <i class="fa fa-phone fa-fw"></i> </a></li>
+        <li><a data-ui-sref="Index" title="Home" class="active"><i class="fa fa-home fa-fw fa-2x"></i><div class="tooltip">Home</div></a></li>
+        <li><a data-ui-sref="about"><i class="fa fa-male fa-fw fa-2x"></i></a> </li>
+        <li><a data-ui-sref="skills" title="Skills"> <i class="fa fa-tasks fa-fw fa-2x"></i> </a> </li>
+        <li><a data-ui-sref="project"><i class="fa fa-code fa-fw fa-2x"></i> </a></li>
+        <li><a data-ui-sref="contact"><i class="fa fa-phone fa-fw fa-2x"></i></a></li>
       </ul>
-      -->
+
 
       <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-  <div class="navbar-collapse collapse">
-       <a data-ui-sref="Index" title="Home" class="active"><i class="fa fa-home fa-fw fa-2x"></i><div class="tooltip">Home</div></a>   <a data-ui-sref="about"><i class="fa fa-male fa-fw fa-2x"></i></a>  <a data-ui-sref="skills" title="Skills"> <i class="fa fa-tasks fa-fw fa-2x"></i> </a> <a data-ui-sref="project"><i class="fa fa-code fa-fw fa-2x"></i> </a>  <a data-ui-sref="contact"><i class="fa fa-phone fa-fw fa-2x"></i></a>
-  </div>
+  <!-- <div class="navbar-collapse collapse">
+       <a data-ui-sref="Index" title="Home" class="active"><i class="fa fa-home fa-fw fa-2x"></i><div class="tooltip">Home</div></a>   <a data-ui-sref="about"><i class="fa fa-male fa-fw fa-2x"></i></a>  <a data-ui-sref="skills" title="Skills"> <i class="fa fa-tasks fa-fw fa-2x"></i> </a> <a data-ui-sref="project"><i class="fa fa-code fa-fw fa-2x"></i> </a>
+  </div> -->
     </div>
-    <!-- </div> -->
-    <!-- </div> -->
+
   </div>
 
 
@@ -70,6 +70,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+</div>
 </body>
 </html>
