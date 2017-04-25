@@ -43,7 +43,10 @@ body {
 nav.navbar-collapse.collapse>ul li{
   list-style: none;
 }
-
+.logo{
+  height: 60px;
+  width: 60px;
+}
 .fa{
   color: rgba(255, 255, 255, 0.7);
 }
@@ -68,6 +71,7 @@ nav.navbar-collapse.collapse ul li a:hover, nav.navbar-collapse.collapse ul li a
   font-size: 24px;
   color:rgba(255,255,255,0.8);
 }
+
 
 /*word rotator*/
 .rw-wrapper{
@@ -173,15 +177,15 @@ nav.navbar-collapse.collapse ul li a:hover, nav.navbar-collapse.collapse ul li a
 }
 /*end*/
 .show_work{
-  margin-top: 300px;
+  margin: 200px 0 100px 100px;
   text-align: center;
   width: 30%;
-  margin-left: 100px;
+  /*margin-left: 100px;*/
   border: 2px solid white;
   border-radius: 20px;
 }
 .bash_prompt{
-  margin:-10% 0 0 50%;
+  margin-left: 100px;
   background-color: rgba(255,255,255,.1);
   border: 2px solid white;
   border-radius: 5px;
