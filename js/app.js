@@ -14,23 +14,18 @@ angular
   RouterFunction
 ])
 .controller('IndexController',[
-
   IndexControllerFunction
 ])
 .controller('AboutController',[
-
   AboutControllerFunction
 ])
 .controller('ProjectController',[
-
   ProjectControllerFunction
 ])
 .controller('ContactController',[
-
   ContactControllerFunction
 ])
 .controller('SkillsController',[
-
   SkillsControllerFunction
 ])
 

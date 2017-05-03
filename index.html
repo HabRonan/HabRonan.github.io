@@ -18,7 +18,7 @@
   <base href="/home">
   <header>
     <div class="navbar navbar-default navbar-fixed-top">
-      <!-- <div class="container"> -->
+      
       <div class="nav navbar-nav navbar-left">
         <li><a data-ui-sref="Index" class="navbar-brand"><img class="logo" ng-src="image/trilogo.png"</a></li>
       </div>
@@ -31,7 +31,7 @@
 
       <nav class="navbar-collapse collapse">
         <ul>
-          <li><a data-ui-sref="Index" title="Home" class="active"><i class="fa fa-home fa-fw fa-2x"></i><div class="tooltip">Home</div></a></li>
+          <li><a data-ui-sref="Index" ui-sref-opts="{reload: true}"  title="Home" class="active"><i class="fa fa-home fa-fw fa-2x"></i><div class="tooltip">Home</div></a></li>
           <li><a data-ui-sref="about" title="About"><i class="fa fa-male fa-fw fa-2x"></i></a> </li>
           <li><a data-ui-sref="skills" title="Skills"> <i class="fa fa-tasks fa-fw fa-2x"></i> </a> </li>
           <li><a data-ui-sref="project" title="Project"><i class="fa fa-code fa-fw fa-2x"></i> </a></li>
@@ -71,7 +71,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+<script src='js/script.js'></script>
   </div>
 </body>
 </html>
