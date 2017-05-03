@@ -1,77 +1,223 @@
 <!DOCTYPE html>
-<html lang="en" data-ng-app="habPortfolioApp">
+<html>
 <head>
-  <title> Habtamu Abere </title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Cantarell" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
-  <script src="js/app.js"></script>
-
-  <base href="/home">
-  <header>
-    <div class="navbar navbar-default navbar-fixed-top">
-      
-      <div class="nav navbar-nav navbar-left">
-        <li><a data-ui-sref="Index" class="navbar-brand"><img class="logo" ng-src="image/trilogo.png"</a></li>
-      </div>
-
-      <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </a>
-
-      <nav class="navbar-collapse collapse">
-        <ul>
-          <li><a data-ui-sref="Index" ui-sref-opts="{reload: true}"  title="Home" class="active"><i class="fa fa-home fa-fw fa-2x"></i><div class="tooltip">Home</div></a></li>
-          <li><a data-ui-sref="about" title="About"><i class="fa fa-male fa-fw fa-2x"></i></a> </li>
-          <li><a data-ui-sref="skills" title="Skills"> <i class="fa fa-tasks fa-fw fa-2x"></i> </a> </li>
-          <li><a data-ui-sref="project" title="Project"><i class="fa fa-code fa-fw fa-2x"></i> </a></li>
-          <li><a data-ui-sref="contact" title="Contact"><i class="fa fa-phone fa-fw fa-2x"></i></a></li>
+  <link rel="stylesheet" href="css/main.css">
+  <title>Habtamu Abere</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="landing" id="About">
+      <!-- Navigation -->
+      <nav class="mainNav lightNav navbar-fixed-top" style="opacity: 1; top: 0px;">
+        <a class="logo round-cta anchor hover css3Animate" href="/"><span class="icon-logo"></span><span class="css3Animate target"></span></a>
+        <ul class="ul-nostyle">
+          <li><a class="item selected anchor hover" href="#Work">Work<span class="line css3Animate"></span></a></li>
+          <li><a class="item hover" href="#About">About Me <span class="line css3Animate"></span></a></li>
+          <li><a class="item hover" href="#Timeline">Timeline <span class="line css3Animate"></span></a></li>
+          <li><a class="item hover" href="#Contact">Contact <span class="line css3Animate"></span></a></li>
         </ul>
       </nav>
+      <div class="cont_1">
+        <h1><span>About ME</span></h1>
+        <div class="line_4"></div>
+      </div>
+
+      <div class="wrapper_landing">
+
+        <div class="content_landing">
+          <div class="section">
+            <div class="top-border left"></div>
+            <div class="top-border right"></div>
+            <h2>HABTAMU ABERE</h2>
+            <h3>Full stack web developer</h3>
+            <p>Former Mechanical Engineer turned web developer, always eager to learn new things and solve problems before they happen.<br> I enjoy being an integral part of a team and understanding and interpreting other's input while having my own voice helps me excel in a team environment.</p>
+            <a href="#Work">VIEW WORK</a>
+            <!-- terminal -->
+            <div class="terminal" draggable="true">
+              <textarea class="terminal-input"></textarea>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+      <div class="line_1"></div>
+      <div class="line_2"></div>
 
     </div>
-  </header>
-</head>
-
-<body>
-
-  <div class="wrapper">
 
 
 
 
 
-    <main data-ui-view></main>
-
-
-
-
-    <footer class="footer">
-      <div class="container">
-        <h4> <i class="fa fa-copyright fa-fw "></i> 2017</h4>
+    <!-- Projects -->
+    <div class="projects" id="Work">
+      <div class="cont_1">
+        <div class="line_4"></div>
+        <h1><span>My Work</span></h1>
       </div>
-      <div class="footer_right">
-        <h4><i class="fa fa-telegram fa-fw "></i>:&nbsp; habtamubuya@yahoo.com</h4> |
-        <h4><i class="fa fa-phone fa-fw "></i>:&nbsp; 202-847-8253</h4>
-      </div>
-    </footer>
+      <div class="content_project">
 
-    <!-- jQuery library -->
+        <div class="row" id="project_view">
+
+          <div class="col-md-4 col-sm-6 ">
+            <div class="each-portfolio">
+              <div class="image-container">
+                <img class="img-responsive" src="css/images/unicornr2.png" alt="Crowdfunding project image">
+              </div>
+              <h4 class="portfolio-title"><a href="http://unicornr.herokuapp.com/">launch</a><a href="https://github.com/HabRonan/project2">Code</a></h4>
+
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 ">
+            <div class="each-portfolio">
+              <div class="image-container">
+                <img class="img-responsive" src="css/images/traveladvisor2.png" alt="Traveladvisor image">
+
+              </div>
+              <h4 class="portfolio-title"><a href="https://habronan.github.io/TravelAdvisor/">launch</a><a href="https://github.com/HabRonan/TravelAdvisor">Front-end</a><a href="https://github.com/mitchellcarroll/TravelAdvisor--Rails-Repo">Back-end</a></h4>
+
+            </div>
+          </div>
+          <div class="clearfix visible-sm"></div>
+          <div class="col-md-4 col-sm-6 ">
+            <div class="each-portfolio">
+              <div class="image-container">
+                <img class="img-responsive" src="css/images/Adventure.png" alt="Adventure app image">
+
+              </div>
+              <h4 class="portfolio-title"><a href="https://github.com/HabRonan/Adventure">Code</a></h4>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 ">
+            <div class="each-portfolio">
+              <div class="image-container">
+                <img class="img-responsive" src="css/images/Triviaworld2.png" alt="Trivia app image">
+
+              </div>
+              <h4 class="portfolio-title"><a href="https://habronan.github.io/project-1/">launch</a><a href="https://github.com/HabRonan/project-1/blob/master/index.html">Code</a></h4>
+
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="each-portfolio">
+              <div class="image-container">
+                <img class="img-responsive" src="css/images/reactapp.png" alt="react app image">
+
+              </div>
+              <h4 class="portfolio-title"><a href="https://github.com/HabRonan/react-omdb">Code</a></h4>
+
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- Timeline -->
+    <div class="timeline" id="Timeline">
+      <div class="cont_1">
+        <div class="line_4"></div>
+        <h1><span>Timeline</span></h1>
+      </div>
+      <div class="content_timeline">
+        <div class="flexContainer">
+
+          <ul class="timeline-events">
+            <li class="timeline-event-years-6-5 timeline-event-legend">
+              <span>
+                <i></i>
+                <h3>Bahir dar University, Bahir dar, Ethiopia</h3>
+                <h4>B.Sc. Mechanical Engineering &nbsp; / &nbsp; </h4><br>
+                <i class="marine"></i>
+                <h3>Bahir dar University, Acre, Israel</h3>
+                <h4>M.Sc. Marine Engineering</h4>
+              </span>
+              <i></i>
+            </li>
+            <li class="timeline-event-years-2">
+              <h2>2006-2010</h2>
+              <h3>Bachelor of Science </h3>
+              <h4>Mechanical Engineering</h4>
+            </li>
+            <li class="timeline-event-years-2">
+              <h2>2011-2011</h2>
+              <h3>Master of science</h3>
+              <h4>Marine Engineering</h4>
+            </li>
+            <li class="timeline-event-years-2">
+              <h2>2011-2014</h2>
+              <h3>Oldendorff Carriers GmbH</h3>
+              <h4>Marine Engineer</h4>
+            </li>
+            <li class="timeline-event-years-3">
+              <h2>2015-2016</h2>
+              <h3>Clark Construction</h3>
+              <h4>Field Engineer</h4>
+            </li>
+            <li class="timeline-event-years-7">
+              <h2>2017-Present</h2>
+              <h3>General Assembly</h3>
+              <h4>Web dev immersive Graduate</h4>
+            </li>
+          </ul>
+          <ul class="timelines-years">
+            <li>2004</li>
+            <li>2006</li>
+            <li>2008</li>
+            <li>2010</li>
+            <li>2012</li>
+            <li>2014</li>
+            <li>2016</li>
+            <li>2018</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Contact me -->
+    <div class="contact" id="Contact">
+      <div class="cont_1">
+        <div class="line_4"></div>
+        <h1><span>Contact Me</span></h1>
+      </div>
+      <div class="content_contact">
+        <div class="contacts centered">
+          <h1>Get in touch!</h1>
+          <div class="verticalLine"></div>
+          <a class="email" href="mailto:habtamubuya@yahoo.com">habtamubuya@yahoo.com</a>
+          <div class="verticalLine" id="second"></div>
+          <ul class="social">
+            <li class="telegram"><a  href="mailto:habtamubuya@yahoo.com" target="_blank"><i class="fa fa-telegram fa-2x" aria-hidden="true"></i></li>
+              <li class="github"><a  href="https://github.com/HabRonan" target="_blank"><i class="fa fa-github fa-2x"></i></span></a></li>
+              <li class="linkedin"><a  href="https://www.linkedin.com/in/habtamu-buya-025879a4/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+              <li class="codepen"><a  href="http://codepen.io/habtamubuya/" target="_blank"><i class="fa fa-codepen fa-2x"></i></a></li>
+
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+<div onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up custom fa-5x" ></i></div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src='js/script.js'></script>
-  </div>
-</body>
-</html>
+    <script src='js/terminal.js'></script>
+    <script src='js/scroll.js'></script>
+  </body>
+  </html>
