@@ -336,14 +336,14 @@ textarea::-webkit-input-placeholder{
   .portfolio-toolbar strong{color:#8774FF}
   .image-container{display:block;position:relative}
   .image-container:hover.img-responsive{
-    display:block;max-width:100%;height:auto
+    display:block;max-width:100%;height:auto;
   }
 .img-responsive{
-  display:block;max-width:100%;height:auto
+  display:block;max-width:100%;height:auto;
 }
 
 .portfolio-title{
-  margin:0 0 5px;font-size:18px;font-weight:600
+  margin:0 0 5px;font-size:18px;font-weight:600;
 }
 .each-portfolio a{
   color: #fff;
