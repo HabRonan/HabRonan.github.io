@@ -102,7 +102,7 @@
     }
 
     Terminal.prototype.cmdCommand = function() {
-      return ["clear", "echo [text]", "exit", "date", "time", "history", "ls", "pwd", "about"].sort().join("\n");
+      return ["clear", "echo [text]", "exit", "date", "time", "history", "pwd", "about"].sort().join("\n");
     };
 //     Added by hab
  Terminal.prototype.aboutCommand = function() {
@@ -242,7 +242,7 @@
     dateTime = (new Date()).toLocaleDateString('se');
     return terminal = new Terminal({
       prefix: "Hab MacBook:~ $ ",
-      greeting: "Type 'cmd' for commands",
+      greeting: "Type 'cmd' for commands and press enter",
       selector: $(".terminal-input"),
       workingDirectory: "User"
     });
