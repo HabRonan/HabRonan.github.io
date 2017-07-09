@@ -1,32 +1,32 @@
-(function($) { 
-		  
+(function($) {
+
 $(document).ready(function(){
-	$('.slide').prepend('<div class="patternOverlay"></div>');	
-	
+	$('.slide').prepend('<div class="patternOverlay"></div>');
+
 	$('.skillbar').each(function(){
 		$(this).find('.skillbar-bar').animate({
 			width:$(this).attr('data-percent')
 		},6000);
 	});
-	
+
 	$('.skillbar').each(function(){
 		$(this).find('.skill-bar-percent').animate({
 			left:$(this).attr('data-percent')
 		},6000);
 	});
-	
+
 	$('.skillbar').each(function(){
 		$(this).find('.skill-bar-percent').text($(this).attr('data-percent'));
 	});
-	
+
 	if($(window).width()>767){
 		$('.navbar-wrapper').animate({
 			opacity:0
 		},200);
 		$('.navbar-wrapper').addClass('default-menu');
-		
-	}	
-	
+
+	}
+
 	$('#nav-show').click(function(x){
 		x.preventDefault();
 		$('.wrapper').removeClass('noGap');
@@ -36,37 +36,37 @@ $(document).ready(function(){
 		$('.navbar-wrapper').removeClass('default-menu');
 		$(this).fadeOut();
 	});
-	
+
 	$('.closeMenu').click(function(x){
 		x.preventDefault();
 		$('.navbar-wrapper').animate({
 			opacity:0
 		},50,function(){$('.navbar-wrapper').addClass('default-menu');});
-		
+
 		$('#nav-show').fadeIn();
 	});
-	
-	
-});	
 
 
-	
+});
+
+
+
 /*===========================================================*/
-	/*	Preloader 
-/*===========================================================*/	
+	/*	Preloader
+/*===========================================================*/
 //<![CDATA[
 	$(window).load(function() { // makes sure the whole site is loaded
 		$("#status").fadeOut(); // will first fade out the loading animation
 		$("#preloader").delay(350).fadeOut("slow"); // will fade out the white DIV that covers the website.
 	})
 //]]>
-		  
-// for mobile nav js	
+
+// for mobile nav js
 $(window).load(function(){
 	$('button.navbar-toggle').click(function(){
 		$(this).toggleClass('active');
-		$('.navbar-collapse').slideToggle();										 
-	});					
+		$('.navbar-collapse').slideToggle();
+	});
 });
 // for banner height js
 var windowWidth = $(window).width();
@@ -85,11 +85,11 @@ $(window).load(function(){
             queue: false
         }
     });
- 
+
     $('.portfolioFilter a').click(function(){
         $('.portfolioFilter .current').removeClass('current');
         $(this).addClass('current');
- 
+
         var selector = $(this).attr('data-filter');
         $container.isotope({
             filter: selector,
@@ -100,7 +100,7 @@ $(window).load(function(){
             }
          });
          return false;
-    }); 
+    });
 
 
 
@@ -108,7 +108,7 @@ $(window).load(function(){
 jQuery(function() {
 	var $chosenSheet,
 	$stylesheets = $( "a[id^=theme-]" );
-	
+
 	// run rlightbox
 	$( ".lb" ).rlightbox();
 	$( ".lb_title-overwritten" ).rlightbox({overwriteTitle: true});
@@ -132,34 +132,10 @@ $(function() {
 });
 
 
-// Testimonial slider
-$(window).load(function(){
-  $('.flexslider').flexslider({
-	animation: "fade",
-	animationLoop: true,
-	slideshow: true,
-	pauseOnAction: false,
-	slideshowSpeed: 7000,
-	controlNav: true,
-	start: function(slider){
-	  $('body').removeClass('loading');
-	}
-  });
-});
 
 
-// we worked slider
-$(window).load(function(){
-      $('.worklogo').flexslider({
-        animation: "slide",
-		slideshow: false,
-        itemWidth: 210,
-        itemMargin: 5,
-        
-      });
-    });
 
-// Skill set 
+// Skill set
 
 
 }(jQuery));
