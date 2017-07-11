@@ -954,7 +954,11 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 #pbCloseBtn{
 	position:absolute !important;
 }
-
+.btn.btn-primary.btn-sm{
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+}
 /*----------------------------------------------------
 	9. Contact Style
 ------------------------------------------------------*/
